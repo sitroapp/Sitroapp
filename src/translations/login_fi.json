@@ -1,0 +1,7 @@
+{
+  "login.usernameEmail": "Käyttäjätunnus/Sähköposti",
+  "login.password": "Salasana",
+  "login.login": "Kirjaudu",
+  "login.role": "Rooli",
+  "login.username": "Käyttäjätunnus"
+}

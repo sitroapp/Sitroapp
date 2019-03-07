@@ -1,0 +1,7 @@
+let il8nConfig = {
+    locale: 'fi',
+    messages: {
+    "active.users": "Mitkä ovat aktiiviset käyttäjätrendit ajan mittaan?",
+    "AnalyticsDashboard.usersPages": "Kuinka monella sivulla käyttäjät vierailevat?"
+    },
+}
