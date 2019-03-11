@@ -11,6 +11,11 @@
 	"recover.ps": "PALAUTA SALASANASI",
 	"email.value": "sähköposti",
 	"send.link": "LÄHETÄ PALAUTUS LINKKI",
+	"ForgotPasswordPage.link": "LÄHETÄ RESET LINK",
+	"recover.ps": "PALAUTA SALASANASI",
+	"email.value": "sähköposti",
+	"send.link": "LÄHETÄ RESET LINK",
+
 	"go.back": "Palaa sisään kirjautumiseen",
 	"confirm.email": "Vahvista sähköpostiosoitteesi!",
 	"email.sent": "Vahvistusviesti on lähetetty",
@@ -22,6 +27,13 @@
 	"areyounot": "Toinen käyttäjä",
 	"reset.pws": "Vaihda SALASANA",
 	"resetyour.pws": "VAIHDA SALASANA",
+
+	"session.locked": "SESSIONI ON LUKITETTU",
+	"inactivity.text": "Käyttämättömyyden vuoksi istunto on lukittu. Syötä salasanasi jatkaaksesi.",
+	"unlock": "AVATA",
+	"areyounot": "Etkö ole",
+	"reset.pws": "Nollaa SALASANA",
+	"resetyour.pws": "NOLLAA SALASANA",
 
     "welcome.back": "Tervetuloa takaisin",
     "task.add": "Lisää tehtävä",
