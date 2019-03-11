@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import {Link} from 'react-router-dom';
 import _ from '@lodash';
 import {darken} from '@material-ui/core/styles/colorManipulator';
+import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root: {
@@ -48,26 +49,29 @@ class ForgotPasswordPage extends Component {
                             <CardContent className="flex flex-col items-center justify-center p-32">
 
                                 <div className="w-128 m-32">
-                                    <img src="assets/images/logos/Sitro_Keltainen.png" alt="logo"/>
+                                    <img src="assets/images/logos/fuse.svg" alt="logo"/>
                                 </div>
 
-                                <Typography variant="h6" className="mt-16 mb-32">RECOVER YOUR PASSWORD</Typography>
+                                <Typography variant="h6" className="mt-16 mb-32">
+                                <FormattedMessage id="ForgotPasswordPage.password" defaultMessage="RECOVER YOUR PASSWORD"/> 
+                                
+                                </Typography>
 
                                 <form name="recoverForm" noValidate className="flex flex-col justify-center w-full">
 
                                     <TextField
                                         className="mb-16"
-                                        label="Email"
                                         autoFocus
                                         type="email"
                                         name="email"
-                                        value={email}
                                         onChange={this.handleChange}
                                         variant="outlined"
                                         required
-                                        fullWidth
-                                    />
-
+                                        fullWidth>
+                                                  
+                                        <FormattedMessage id="email.value" defaultMessage="email" />
+                                        </TextField>
+                                    
                                     <Button
                                         variant="contained"
                                         color="primary"
@@ -75,13 +79,15 @@ class ForgotPasswordPage extends Component {
                                         aria-label="Reset"
                                         disabled={!this.canBeSubmitted()}
                                     >
-                                        SEND RESET LINK
+                                       <FormattedMessage id="ForgotPasswordPage.link" defaultMessage="SEND RESET LINK" />  
                                     </Button>
 
                                 </form>
 
                                 <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                                    <Link className="font-medium" to="/pages/auth/login">Go back to login</Link>
+                                    <Link className="font-medium" to="/pages/auth/login">
+                                    <FormattedMessage id="go.back" defaultMessage="Go back to login"/>
+                                        </Link>
                                 </div>
 
                             </CardContent>
