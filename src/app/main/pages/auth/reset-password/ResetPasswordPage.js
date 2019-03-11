@@ -5,8 +5,6 @@ import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import {Link} from 'react-router-dom';
 import _ from '@lodash';
-import  { FormattedMessage } from 'react-intl';
-
 
 const styles = theme => ({
     root: {
@@ -57,9 +55,7 @@ class ResetPasswordPage extends Component {
 
                                 <img className="w-128 m-32" src="assets/images/logos/Sitro_Keltainen.png" alt="logo"/>
 
-                                <Typography variant="h6" className="mt-16 mb-32">
-                                <FormattedMessage id="resetyour.pws" defaultMessage="RESET YOUR PASSWORD" /> 
-                                </Typography>
+                                <Typography variant="h6" className="mt-16 mb-32">RESET YOUR PASSWORD</Typography>
 
                                 <form name="resetForm" noValidate className="flex flex-col justify-center w-full">
 
@@ -107,15 +103,13 @@ class ResetPasswordPage extends Component {
                                         aria-label="Reset"
                                         disabled={!this.canBeSubmitted()}
                                     >
-                                       <FormattedMessage id="reset.pws" defaultMessage="RESET MY PASSWORD" /> 
+                                        RESET MY PASSWORD
                                     </Button>
 
                                 </form>
 
                                 <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                                    <Link className="font-medium" to="/pages/auth/login">
-                                    <FormattedMessage id="goback.login" defaultMessage="Go back to login" />
-                                    </Link>
+                                    <Link className="font-medium" to="/pages/auth/login">Go back to login</Link>
                                 </div>
 
                             </CardContent>

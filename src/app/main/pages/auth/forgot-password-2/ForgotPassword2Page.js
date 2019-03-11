@@ -5,7 +5,6 @@ import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import {Link} from 'react-router-dom';
 import _ from '@lodash';
-import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root : {
@@ -48,7 +47,7 @@ class ForgotPassword2Page extends Component {
 
                     <FuseAnimate animation="transition.slideUpIn" delay={300}>
                         <Typography variant="h3" color="inherit" className="font-light">
-                        <FormattedMessage id="welcome.sitro" defaultMessage="Welcome to Sitro" />
+                            Welcome to the FUSE!
                         </Typography>
                     </FuseAnimate>
 
@@ -66,9 +65,7 @@ class ForgotPassword2Page extends Component {
 
                         <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
 
-                            <Typography variant="h6" className="md:w-full mb-32">
-                            <FormattedMessage id="recover.ps" defaultMessage="RECOVER YOUR PASSWORD" />
-                            </Typography>
+                            <Typography variant="h6" className="md:w-full mb-32">RECOVER YOUR PASSWORD</Typography>
 
                             <form name="recoverForm" noValidate className="flex flex-col justify-center w-full">
 
@@ -92,7 +89,7 @@ class ForgotPassword2Page extends Component {
                                     aria-label="Reset"
                                     disabled={!this.canBeSubmitted()}
                                 >
-                                    <FormattedMessage id="send.link" defaultMessage="SEND RESET LINK" />
+                                    SEND RESET LINK
                                 </Button>
 
                             </form>

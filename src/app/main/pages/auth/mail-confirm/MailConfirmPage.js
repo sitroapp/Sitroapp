@@ -4,7 +4,6 @@ import {darken} from '@material-ui/core/styles/colorManipulator';
 import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import {Link} from 'react-router-dom';
-import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root: {
@@ -34,24 +33,18 @@ class MailConfirmPage extends Component {
                                     <Icon className="text-96" color="action">email</Icon>
                                 </div>
 
-                                <Typography variant="h5" className="text-center mb-16">
-                                <FormattedMessage id="confirm.email" defaultMessage="Confirm your email address!" />
-                                    </Typography>
+                                <Typography variant="h5" className="text-center mb-16">Confirm your email address!</Typography>
 
                                 <Typography className="text-center mb-16 w-full" color="textSecondary">
-                                  <FormattedMessage  id="email.sent" defaultMessage="A confirmation e-mail has been sent to" />
-                                  <b>example@mymail.com</b>.
+                                    A confirmation e-mail has been sent to <b>example@mymail.com</b>.
                                 </Typography>
 
                                 <Typography className="text-center w-full" color="textSecondary">
-                                   <FormattedMessage id="check.inbox" defaultMessage="Check your inbox and click on the Confirm my email link to confirm your email address." /> 
-                                   
+                                    Check your inbox and click on the "Confirm my email" link to confirm your email address.
                                 </Typography>
 
                                 <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                                    <Link className="font-medium" to="/pages/auth/login">
-                                  <FormattedMessage id="goback.login" defaultMessage=" Go back to login" /> 
-                                    </Link>
+                                    <Link className="font-medium" to="/pages/auth/login">Go back to login</Link>
                                 </div>
 
                             </CardContent>

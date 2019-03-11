@@ -276,14 +276,14 @@ class TodoDialog extends Component {
                             />
                         </FormControl>
 
-                        <label for=""><FormattedMessage id="notes2" values={{name: 'React.js'}}/></label>
+                        <label for=""><FormattedMessage id="notes" values={{name: 'React.js'}}/></label>
                         <FormControl className="mt-8 mb-16" required fullWidth>
                             <TextField
                                 label=""
-                                name="notes2"
+                                name="notes"
                                 multiline
                                 rows="6"
-                                value={form.notes2s}
+                                value={form.notes}
                                 onChange={this.handleChange}
                                 variant="outlined"
                             />

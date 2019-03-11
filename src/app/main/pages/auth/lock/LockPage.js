@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import {Link} from 'react-router-dom';
 import _ from '@lodash';
 import {darken} from '@material-ui/core/styles/colorManipulator';
-import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root: {
@@ -56,11 +55,9 @@ class LockPage extends Component {
                                     </div>
 
                                     <div>
-                                        <Typography variant="h6" className="mb-8">
-                                        <FormattedMessage id="session.locked" defaultMessage="YOUR SESSION IS LOCKED" /> </Typography>
+                                        <Typography variant="h6" className="mb-8">YOUR SESSION IS LOCKED</Typography>
                                         <Typography color="textSecondary">
-
-                                          <FormattedMessage id="inactivity.text" defaultMessage="Due to inactivity, your session is locked. Enter your password to continue." />  
+                                            Due to inactivity, your session is locked. Enter your password to continue.
                                         </Typography>
                                     </div>
                                 </div>
@@ -96,15 +93,13 @@ class LockPage extends Component {
                                         aria-label="Reset"
                                         disabled={!this.canBeSubmitted()}
                                     >
-                                        <FormattedMessage id="unlock" defaultMessage="UNLOCK" />
+                                        UNLOCK
                                     </Button>
 
                                 </form>
 
                                 <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                                    <Link className="font-medium" to="/pages/auth/login">
-                                    <FormattedMessage id="areyounot" defaultMessage="Are you not Katherine?" />
-                                    </Link>
+                                    <Link className="font-medium" to="/pages/auth/login">Are you not Katherine?</Link>
                                 </div>
 
                             </CardContent>
