@@ -7,43 +7,31 @@
 	"AnalyticsDashboard.topCam": "What are your top campaigns?",
 
 	"ForgotPasswordPage.password": "PALAUTA SALASANASI",
-<<<<<<< HEAD
 	"ForgotPasswordPage.link": "LÄHETÄ PALAUTUS LINKKI",
 	"recover.ps": "PALAUTA SALASANASI",
 	"email.value": "sähköposti",
 	"send.link": "LÄHETÄ PALAUTUS LINKKI",
-=======
 	"ForgotPasswordPage.link": "LÄHETÄ RESET LINK",
 	"recover.ps": "PALAUTA SALASANASI",
 	"email.value": "sähköposti",
 	"send.link": "LÄHETÄ RESET LINK",
->>>>>>> 7f2d98bb875b6a7211ebafd3eb05542a54e63833
 	"go.back": "Palaa sisään kirjautumiseen",
 	"confirm.email": "Vahvista sähköpostiosoitteesi!",
 	"email.sent": "Vahvistusviesti on lähetetty",
 	"check.inbox": "Tarkista postilaatikkosi ja vahvista sähköpostiosoitteesi napsauttamalla Vahvista sähköpostiosoitteeni.",
 	"goback.login": "Palaa sisään kirjautumiseen",
-<<<<<<< HEAD
-<<<<<<< HEAD
 	"session.locked": "ISTUNTONI ON LUKITTU",
 	"inactivity.text": "Käyttämättömyyden vuoksi istunto on lukittu. Syötä salasanasi jatkaaksesi.",
 	"unlock": "AVAA",
 	"areyounot": "Toinen käyttäjä",
 	"reset.pws": "Vaihda SALASANA",
 	"resetyour.pws": "VAIHDA SALASANA",
-=======
-=======
->>>>>>> 7f2d98bb875b6a7211ebafd3eb05542a54e63833
 	"session.locked": "SESSIONI ON LUKITETTU",
 	"inactivity.text": "Käyttämättömyyden vuoksi istunto on lukittu. Syötä salasanasi jatkaaksesi.",
 	"unlock": "AVATA",
 	"areyounot": "Etkö ole",
 	"reset.pws": "Nollaa SALASANA",
 	"resetyour.pws": "NOLLAA SALASANA",
-<<<<<<< HEAD
->>>>>>> 7f2d98bb875b6a7211ebafd3eb05542a54e63833
-=======
->>>>>>> 7f2d98bb875b6a7211ebafd3eb05542a54e63833
 
     "welcome.back": "Tervetuloa takaisin",
     "task.add": "Lisää tehtävä",
