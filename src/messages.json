@@ -14,5 +14,73 @@
   {
     "id": "AnalyticsDashboard.usersPages",
     "defaultMessage": "How many pages your users visit?"
-  }
+  },
+  {
+    "id": "ForgotPasswordPage.password",
+    "defaultMessage": "RECOVER YOUR PASSWORD"
+},
+{
+    "id": "ForgotPasswordPage.link",
+    "defaultMessage": "SEND RESET LINK"
+},
+{
+   "id": "email.value",
+   "defaultMessage": "email"
+},
+{
+  "id": "welcome.sitro",
+  "defaultMessage": "Welcome to Sitro"
+},
+{
+  "id": "recover.ps",
+  "defaultMessage": "RECOVER YOUR PASSWORD"
+},
+{
+  "id": "send.link",
+   "defaultMessage": "SEND RESET LINK"
+},
+{
+  "id": "go.back",
+  "defaultMessage": "Go back to login"
+},
+{
+  "id": "confirm.email",
+   "defaultMessage": "Confirm your email address!"
+},
+{
+  "id": "email.sent",
+  "defaultMessage": "A confirmation e-mail has been sent to" 
+},
+{
+  "id":"check.inbox",
+  "defaultMessage": "Check your inbox and click on the Confirm my email link to confirm your email address."
+}, 
+{
+  "id": "goback.login",
+  "defaultMessage": "Go back to login"
+},
+{
+  "id": "session.locked",
+  "defaultMessage": "YOUR SESSION IS LOCKED"
+}, 
+{
+  "id": "inactivity.text",
+  "defaultMessage": "Due to inactivity, your session is locked. Enter your password to continue."
+},
+{
+  "id": "unlock",
+  "defaultMessage": "UNLOCK"
+},
+{
+  "id": "areyounot",
+  "defaultMessage": "Are you not"
+},
+{
+  "id": "reset.pws",
+  "defaultMessage": "RESET MY PASSWORD"
+},
+{
+  "id": "resetyour.pws",
+  "defaultMessage": "RESET YOUR PASSWORD"
+}
 ]
