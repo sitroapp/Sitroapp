@@ -5,6 +5,7 @@ import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import {Link} from 'react-router-dom';
 import _ from '@lodash';
+import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root: {
@@ -53,14 +54,13 @@ class ForgotPassword2Page extends Component {
 
                     <FuseAnimate animation="transition.slideUpIn" delay={300}>
                         <Typography variant="h3" color="inherit" className="font-light">
-                            Welcome to the FUSE!
+                        <FormattedMessage id="welcome.sitro" values={{name: 'React.js'}}/>
                         </Typography>
                     </FuseAnimate>
 
                     <FuseAnimate delay={400}>
                         <Typography variant="subtitle1" color="inherit" className="max-w-512 mt-16">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nisl erat, vel convallis elit fermentum pellentesque. Sed mollis velit
-                            facilisis facilisis.
+                            Ote tahtävät ja vuorovaikutus haltuun.
                         </Typography>
                     </FuseAnimate>
                 </div>
@@ -71,7 +71,7 @@ class ForgotPassword2Page extends Component {
 
                         <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128">
 
-                            <Typography variant="h6" className="md:w-full mb-32">RESET YOUR PASSWORD</Typography>
+                            <Typography variant="h6" className="md:w-full mb-32"> <FormattedMessage id="resetyour.pws" defaultMessage="RESET YOUR PASSWORD" /> </Typography>
 
                             <form name="resetForm" noValidate className="flex flex-col justify-center w-full">
 
@@ -114,13 +114,13 @@ class ForgotPassword2Page extends Component {
 
                                 <Button variant="contained" color="primary" className="w-224 mx-auto mt-16" aria-label="Reset"
                                         disabled={!this.canBeSubmitted()}>
-                                    RESET MY PASSWORD
+                                   <FormattedMessage id="reset.pws" defaultMessage="RESET MY PASSWORD" /> 
                                 </Button>
 
                             </form>
 
                             <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                                <Link className="font-medium" to="/pages/auth/login-2">Go back to login</Link>
+                                <Link className="font-medium" to="/pages/auth/login-2"><FormattedMessage id="goback.login" defaultMessage="Go back to login" /></Link>
                             </div>
 
                         </CardContent>

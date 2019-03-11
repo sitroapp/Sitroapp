@@ -82,7 +82,7 @@ class LoginPage extends Component {
                                     />
 
                                     <div className="flex items-center justify-between">
-
+                                   
                                         <FormControl>
                                             <FormControlLabel
                                                 control={
