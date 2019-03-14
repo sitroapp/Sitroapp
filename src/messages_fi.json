@@ -15,6 +15,7 @@
 	"recover.ps": "PALAUTA SALASANASI",
 	"email.value": "sähköposti",
 	"send.link": "LÄHETÄ RESET LINK",
+
 	"go.back": "Palaa sisään kirjautumiseen",
 	"confirm.email": "Vahvista sähköpostiosoitteesi!",
 	"email.sent": "Vahvistusviesti on lähetetty",
@@ -26,6 +27,7 @@
 	"areyounot": "Toinen käyttäjä",
 	"reset.pws": "Vaihda SALASANA",
 	"resetyour.pws": "VAIHDA SALASANA",
+
 	"session.locked": "SESSIONI ON LUKITETTU",
 	"inactivity.text": "Käyttämättömyyden vuoksi istunto on lukittu. Syötä salasanasi jatkaaksesi.",
 	"unlock": "AVATA",
