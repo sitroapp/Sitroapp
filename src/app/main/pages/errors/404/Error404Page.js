@@ -2,6 +2,7 @@ import React from 'react';
 import {Icon, Input, Paper, Typography} from '@material-ui/core';
 import {FuseAnimate} from '@fuse';
 import {Link} from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 const Error404Page = () => {
     return (
@@ -17,12 +18,14 @@ const Error404Page = () => {
 
                 <FuseAnimate delay={500}>
                     <Typography variant="h5" color="textSecondary" className="mb-16">
-                        Sorry but we could not find the page you are looking for
+                     <FormattedMessage id="error" defaultMessage="Sorry but we could not find the page you are looking for" />   
                     </Typography>
                 </FuseAnimate>
 
                 <Paper className="flex items-center w-full h-56 p-16 mt-48 mb-16" elevation={1}>
-                    <Icon color="action">search</Icon>
+                    <Icon color="action"> 
+                    <FormattedMessage id="search" defaultMessage="search" /> 
+                    </Icon>
                     <Input
                         placeholder="Search for anything"
                         className="pl-16"
@@ -34,7 +37,8 @@ const Error404Page = () => {
                     />
                 </Paper>
 
-                <Link className="font-medium" to="/apps/dashboards/project">Go back to dashboard</Link>
+                <Link className="font-medium" to="/apps/dashboards/project">
+                <FormattedMessage id="gotodashboard" defaultMessage="Go back to dashboard" /> </Link>
             </div>
         </div>
     );

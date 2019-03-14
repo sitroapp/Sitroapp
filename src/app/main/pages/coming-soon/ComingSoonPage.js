@@ -4,6 +4,7 @@ import {darken} from '@material-ui/core/styles/colorManipulator';
 import {FuseCountdown, FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import _ from '@lodash';
+import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root: {
@@ -49,11 +50,11 @@ class ComingSoonPage extends Component {
                                 <img className="w-128 m-32" src="assets/images/logos/fuse.svg" alt="logo"/>
 
                                 <Typography variant="subtitle1" className="mb-16">
-                                    Hey! Thank you for checking out our app.
+                                   <FormattedMessage id="thank.you" defaultMessage="Hey! Thank you for checking out our app." /> 
                                 </Typography>
 
                                 <Typography color="textSecondary" className="max-w-288">
-                                    It’s not quite ready yet, but we are working hard and it will be ready in approximately:
+                                  <FormattedMessage id="ready.yet" defaultMessage="It’s not quite ready yet, but we are working hard and it will be ready in approximately:" /> 
                                 </Typography>
 
                                 <FuseCountdown endDate="2019-07-28" className="my-48"/>
@@ -61,7 +62,7 @@ class ComingSoonPage extends Component {
                                 <Divider className="w-48"/>
 
                                 <Typography className="font-bold my-32 w-full">
-                                    If you would like to be notified when the app is ready, you can subscribe to our e-mail list.
+                                   <FormattedMessage id="subscrib_to_email" defaultMessage="If you would like to be notified when the app is ready, you can subscribe to our e-mail list." /> 
                                 </Typography>
 
                                 <form name="subscribeForm" noValidate className="flex flex-col justify-center w-full">
@@ -86,7 +87,7 @@ class ComingSoonPage extends Component {
                                         aria-label="Subscribe"
                                         disabled={!this.canBeSubmitted()}
                                     >
-                                        SUBSCRIBE
+                                      <FormattedMessage id="subscribe" defaultMessage="SUBSCRIBE" /> 
                                     </Button>
                                 </form>
                             </CardContent>

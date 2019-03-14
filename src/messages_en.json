@@ -22,6 +22,13 @@
   "areyounot": "Are you not",
   "reset.pws": "RESET MY PASSWORD",
   "resetyour.pws": "RESET YOUR PASSWORD",
+  "thank.you": "Hey! Thank you for checking out our app.",
+  "ready.yet": "It’s not quite ready yet, but we are working hard and it will be ready in approximately:",
+  "subscrib_to_email": "If you would like to be notified when the app is ready, you can subscribe to our e-mail list.",
+  "subscribe": "SUBSCRIBE",
+  "error": "Sorry but we could not find the page you are looking for",
+  "gotodashboard": "Go back to dashboard",
+  
 
   "welcome.back": "Welcome back",
   "task.add": "Add task",
@@ -106,7 +113,7 @@
   "create.account": "Create an account",
   "login.forgotPassword":  "Forgot Password?",
   "create.account2": "CREATE AN ACCOUNT",
-  "register.termsAndConditions": "I read ans accept terms and conditions",
+  "register.termsAndConditions": "I read and accept terms and conditions",
   "products": "Products",
   "product.addNew": "ADD NEW PRODUCT",
   "new": "new",
