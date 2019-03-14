@@ -20,6 +20,8 @@ import {
 import {FuseAnimate, FuseAnimateGroup} from '@fuse';
 import classNames from 'classnames';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
+
 
 function Transition(props)
 {
@@ -76,13 +78,13 @@ class KnowledgeBasePage extends Component {
 
                     <FuseAnimate animation="transition.slideUpIn" duration={400} delay={100}>
                         <Typography color="inherit" className="text-36 sm:text-56 font-light">
-                            How can we help?
+                        <FormattedMessage id="hwcnwhlp" defaultMessage="How can we help?" /> 
                         </Typography>
                     </FuseAnimate>
 
                     <FuseAnimate duration={400} delay={600}>
                         <Typography variant="subtitle1" color="inherit" className="opacity-75 mt-16 mx-auto max-w-512">
-                            Welcome to our knowledge base
+                        <FormattedMessage id="weltoKnldge" defaultMessage="Welcome to our knowledge base" /> 
                         </Typography>
                     </FuseAnimate>
                 </div>
@@ -104,13 +106,15 @@ class KnowledgeBasePage extends Component {
                                             {category.featuredArticles.map(article => (
                                                 <ListItem key={article.id} button onClick={() => this.handleOpenDialog(article)}>
                                                     <ListItemIcon className="mr-0">
-                                                        <Icon>note</Icon>
+                                                        <Icon>
+                                                        <FormattedMessage id="note" defaultMessage="note" /> </Icon>
                                                     </ListItemIcon>
                                                     <ListItemText primary={article.title}/>
                                                 </ListItem>
                                             ))}
                                         </List>
-                                        <Button className="normal-case w-full justify-start" color="secondary">See all articles ({category.articlesCount})</Button>
+                                        <Button className="normal-case w-full justify-start" color="secondary">
+                                        <FormattedMessage id="allarticles" defaultMessage="See all articles " /> ({category.articlesCount})</Button>
                                     </CardContent>
                                 </Card>
                             </div>
@@ -122,8 +126,7 @@ class KnowledgeBasePage extends Component {
                     open={openDialog}
                     onClose={this.handleCloseDialog}
                     aria-labelledby="knowledge-base-document"
-                    TransitionComponent={Transition}
-                >
+                    TransitionComponent={Transition} >
                     <DialogTitle>
                         {dialogData.title}
                     </DialogTitle>
@@ -133,7 +136,7 @@ class KnowledgeBasePage extends Component {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleCloseDialog} color="primary">
-                            CLOSE
+                        <FormattedMessage id="close" defaultMessage="CLOSE" /> 
                         </Button>
                     </DialogActions>
                 </Dialog>
