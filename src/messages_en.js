@@ -48,8 +48,11 @@ const mes_en = () => {
     "discount": "DISCOUNT",
     "subtotal": "SUBTOTAL",
     "paybusiness": "Please pay within 15 days. Thank you for your business.",
-    "french": "In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia. Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero tincidunt lacinia et eget eros."
-
+    "french": "In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia. Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero tincidunt lacinia et eget eros.",
+    "phone": "Phone: ",
+    "email": "Email: ",
+    "web": "Web: ",
+    "client": "CLIENT"
 
 }
 );

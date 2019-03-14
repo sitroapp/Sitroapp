@@ -4,6 +4,7 @@ import {darken} from '@material-ui/core/styles/colorManipulator';
 import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root   : {
@@ -73,19 +74,22 @@ class ModernInvoicePage extends Component {
                                                 )}
                                                 {invoice.from.phone && (
                                                     <Typography color="textSecondary">
-                                                        <span>Phone:</span>
+                                                        <span>
+                                                            <FormattedMessage id="phone" defaultMessage="Phone:" /></span>
                                                         {invoice.from.phone}
                                                     </Typography>
                                                 )}
                                                 {invoice.from.email && (
                                                     <Typography color="textSecondary">
-                                                        <span>Email:</span>
+                                                        <span>
+                                                            <FormattedMessage id="email" defaultMessage="Email:" /></span>
                                                         {invoice.from.email}
                                                     </Typography>
                                                 )}
                                                 {invoice.from.website && (
                                                     <Typography color="textSecondary">
-                                                        <span>Web:</span>
+                                                        <span>
+                                                            <FormattedMessage id="web" defaultMessage="Web:" /></span>
                                                         {invoice.from.website}
                                                     </Typography>
                                                 )}
@@ -94,7 +98,8 @@ class ModernInvoicePage extends Component {
 
                                         <div className="flex items-center">
                                             <div className="flex justify-end items-center w-160 print:w-60">
-                                                <Typography variant="h5" className="font-light print:text-16" color="textSecondary">CLIENT</Typography>
+                                                <Typography variant="h5" className="font-light print:text-16" color="textSecondary">
+                                                <FormattedMessage id="client" defaultMessage="CLIENT" /></Typography>
                                             </div>
 
                                             <div className={classNames(classes.divider, "mx-48 w-px h-128 print:mx-16")}/>
@@ -110,19 +115,22 @@ class ModernInvoicePage extends Component {
                                                 )}
                                                 {invoice.client.phone && (
                                                     <Typography color="textSecondary">
-                                                        <span>Phone:</span>
+                                                        <span>
+                                                            <FormattedMessage id="phone" defaultMessage="Phone:" /></span>
                                                         {invoice.client.phone}
                                                     </Typography>
                                                 )}
                                                 {invoice.client.email && (
                                                     <Typography color="textSecondary">
-                                                        <span>Email:</span>
+                                                        <span>
+                                                            <FormattedMessage id="email" defaultMessage=" Email:"/></span>
                                                         {invoice.client.email}
                                                     </Typography>
                                                 )}
                                                 {invoice.client.website && (
                                                     <Typography color="textSecondary">
-                                                        <span>Web:</span>
+                                                        <span>
+                                                           <FormattedMessage id="web" defaultMessage="" /></span>
                                                         {invoice.client.website}
                                                     </Typography>
                                                 )}
@@ -135,7 +143,7 @@ class ModernInvoicePage extends Component {
                                             <tr>
                                                 <td className="pr-16 pb-32">
                                                     <Typography className="font-light" variant="h4" color="textSecondary">
-                                                        INVOICE
+                                                      <FormattedMessage id="invoice" defaultMessage="INVOICE"/>  
                                                     </Typography>
                                                 </td>
                                                 <td className="pb-32">
@@ -148,7 +156,7 @@ class ModernInvoicePage extends Component {
                                             <tr>
                                                 <td className="text-right pr-16">
                                                     <Typography color="textSecondary">
-                                                        INVOICE DATE
+                                                        <FormattedMessage id="invoicedate" defaultMessage="INVOICE DATE"/>
                                                     </Typography>
                                                 </td>
                                                 <td>
@@ -161,7 +169,7 @@ class ModernInvoicePage extends Component {
                                             <tr>
                                                 <td className="text-right pr-16">
                                                     <Typography color="textSecondary">
-                                                        DUE DATE
+                                                      <FormattedMessage id="duadate" defaultMessage="DUE DATE"/> 
                                                     </Typography>
                                                 </td>
                                                 <td>
@@ -174,7 +182,7 @@ class ModernInvoicePage extends Component {
                                             <tr>
                                                 <td className="text-right pr-16">
                                                     <Typography color="textSecondary">
-                                                        TOTAL DUE
+                                                     <FormattedMessage id="totaldue" defaultMessage="TOTAL DUE"/>   
                                                     </Typography>
                                                 </td>
                                                 <td>
@@ -193,19 +201,19 @@ class ModernInvoicePage extends Component {
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    SERVICE
+                                                  <FormattedMessage id="service" defaultMessage="SERVICE" />
                                                 </th>
                                                 <th>
-                                                    UNIT
+                                                <FormattedMessage id="unit" defaultMessage="UNIT" />    
                                                 </th>
                                                 <th className="text-right">
-                                                    UNIT PRICE
+                                                <FormattedMessage id="unitprice" defaultMessage="UNIT PRICE" />   
                                                 </th>
                                                 <th className="text-right">
-                                                    QUANTITY
+                                                <FormattedMessage id="quantity" defaultMessage="QUANTITY" />   
                                                 </th>
                                                 <th className="text-right">
-                                                    TOTAL
+                                                <FormattedMessage id="total" defaultMessage="TOTAL" />  
                                                 </th>
                                             </tr>
                                         </thead>
@@ -237,7 +245,8 @@ class ModernInvoicePage extends Component {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">SUBTOTAL</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="subtotal" defdefaultMessage="SUBTOTAL" /> </Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -247,7 +256,8 @@ class ModernInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">TAX</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="tax" defaultMessage="TAX"/></Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -257,7 +267,8 @@ class ModernInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">DISCOUNT</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="discount" defaultMessage="DISCOUNT" /></Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -267,7 +278,8 @@ class ModernInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-light" variant="h4" color="textSecondary">TOTAL</Typography>
+                                                    <Typography className="font-light" variant="h4" color="textSecondary">
+                                                    <FormattedMessage id="total" defaultMessage="TOTAL"/></Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-light" variant="h4" color="textSecondary">
@@ -282,7 +294,9 @@ class ModernInvoicePage extends Component {
 
                                 <div className="mt-96 print:mt-0 print:px-16">
 
-                                    <Typography className="mb-24 print:mb-12" variant="body1">Please pay within 15 days. Thank you for your business.</Typography>
+                                    <Typography className="mb-24 print:mb-12" variant="body1">
+                                    <FormattedMessage id="paybusiness" defaultMessage="Please pay within 15 days. Thank you for your business." />
+                                    </Typography>
 
                                     <div className="flex">
 
@@ -291,11 +305,11 @@ class ModernInvoicePage extends Component {
                                         </div>
 
                                         <Typography className="font-medium mb-64" variant="caption" color="textSecondary">
-                                            In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque
+                                        <FormattedMessage id="french" defdefaultMessage="In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque
                                             scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit
                                             quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia.
                                             Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero
-                                            tincidunt lacinia et eget eros.
+                                            tincidunt lacinia et eget eros." />
                                         </Typography>
                                     </div>
                                 </div>
