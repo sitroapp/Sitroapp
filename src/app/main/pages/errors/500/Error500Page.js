@@ -2,6 +2,9 @@ import React from 'react';
 import {Typography} from '@material-ui/core';
 import {FuseAnimate} from '@fuse';
 import {Link} from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
+
+
 
 const Error500Page = () => {
     return (
@@ -17,17 +20,18 @@ const Error500Page = () => {
 
                 <FuseAnimate delay={500}>
                     <Typography variant="h5" color="textSecondary" className="mb-16">
-                        Well, you broke the internet!
+                      <FormattedMessage id="broketheinternet" defaultMessage=" Well, you broke the internet!" /> 
                     </Typography>
                 </FuseAnimate>
 
                 <FuseAnimate delay={600}>
                     <Typography variant="subtitle1" color="textSecondary" className="mb-48">
-                        Just kidding, looks like we have an internal issue, please try again in couple minutes
+                       <FormattedMessage id="justkidding" defaultMessage="Just kidding, looks like we have an internal issue, please try again in couple minutes" /> 
                     </Typography>
                 </FuseAnimate>
 
-                <Link className="font-medium" to="/apps/dashboards/project">Report this problem</Link>
+                <Link className="font-medium" to="/apps/dashboards/project">
+                <FormattedMessage id="reportproblem" defaultMessage="Report this problem"/> </Link>
             </div>
         </div>
     );

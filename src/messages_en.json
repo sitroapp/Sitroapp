@@ -28,7 +28,10 @@
   "subscribe": "SUBSCRIBE",
   "error": "Sorry but we could not find the page you are looking for",
   "gotodashboard": "Go back to dashboard",
-  
+  "search": "Search",
+  "broketheinternet": "Well, you broke the internet!",
+	"justkidding": "Just kidding, looks like we have an internal issue, please try again in couple minutes",
+	"reportproblem": "Report this problem",
 
   "welcome.back": "Welcome back",
   "task.add": "Add task",
