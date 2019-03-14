@@ -27,7 +27,9 @@ const mes_en = () => {
     "error": "Sorry but we could not find the page you are looking for",
     "search": "search",
     "gotodashboard": "Go back to dashboard",
-    
+    "broketheinternet": "Well, you broke the internet!",
+	"justkidding": "Just kidding, looks like we have an internal issue, please try again in couple minutes",
+	"reportproblem": "Report this problem",
 
 }
 );

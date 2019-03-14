@@ -110,5 +110,17 @@
 {
   "id": "error",
   "defaultMessage": "Sorry but we could not find the page you are looking for"
+},
+{
+  "id": "broketheinternet",
+  "defaultMessage": "Well, you broke the internet!"
+},
+{
+  "id": "justkidding",
+  "defaultMessage": "Just kidding, looks like we have an internal issue, please try again in couple minutes"
+},
+{
+  "id": "reportproblem",
+  "defaultMessage": "Report this problem"
 }
 ]

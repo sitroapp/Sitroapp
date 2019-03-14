@@ -38,9 +38,12 @@
  	"ready.yet": "Se ei ole vielä valmis, mutta työskentelemme kovasti ja se on valmis noin:",
   	"subscrib_to_email": "Jos haluat saada ilmoituksen, kun sovellus on valmis, voit tilata sähköpostilistamme.",
 	"subscribe": "TILAA",
-	"error": "Sorry but we could not find the page you are looking for",
-	"gotodashboard": "Go back to dashboard",
-	
+	"error": "Valitettavasti etsinyt sivua ei löytynyt",
+	"gotodashboard": "Palaa kojelautaan",
+	"search": "Hae",
+	"broketheinternet": "No, rikkoit internetin!",
+	"justkidding": "Vain kidding, näyttää siltä, että meillä on sisäinen ongelma, yritä uudelleen parin minuutin kuluttua",
+	"reportproblem": "Ilmoita tästä ongelmasta",
 
     "welcome.back": "Tervetuloa takaisin",
     "task.add": "Lisää tehtävä",
