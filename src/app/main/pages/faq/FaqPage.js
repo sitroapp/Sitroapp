@@ -3,6 +3,8 @@ import {withStyles, ExpansionPanel, ExpansionPanelDetails, ExpansionPanelSummary
 import {FuseUtils, FuseAnimate, FuseAnimateGroup} from '@fuse';
 import classNames from 'classnames';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
+
 
 const styles = theme => ({
     header: {
@@ -70,18 +72,19 @@ class FaqPage extends Component {
 
                     <FuseAnimate animation="transition.slideUpIn" duration={400} delay={100}>
                         <Typography color="inherit" className="text-36 sm:text-56 font-light">
-                            We're here to help
+                           <FormattedMessage id="heretohelp" defaultMessage=" We're here to help" />
                         </Typography>
                     </FuseAnimate>
 
                     <FuseAnimate duration={400} delay={600}>
                         <Typography variant="subtitle1" color="inherit" className="opacity-75 mt-8 sm:mt-16 mx-auto max-w-512">
-                            Frequently asked questions
+                        <FormattedMessage id="feqsquestions" defaultMessage="Frequently asked questions" />  
                         </Typography>
                     </FuseAnimate>
 
                     <Paper className={"flex items-center h-56 w-full max-w-md mt-16 sm:mt-32"} elevation={1}>
-                        <Icon color="action" className="ml-16">search</Icon>
+                        <Icon color="action" className="ml-16">
+                        <FormattedMessage id="search" defaultMessage="search" /> </Icon>
                         <Input
                             placeholder="Search in faqs..."
                             className="px-16"
@@ -105,9 +108,11 @@ class FaqPage extends Component {
                         {faqs.map((faq) => (
                             <ExpansionPanel className={classes.panel} key={faq.id} expanded={expanded === faq.id} onChange={this.toogleExpansion(faq.id)} elevation={0}>
 
-                                <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
+                                <ExpansionPanelSummary expandIcon={<Icon>
+                                    <FormattedMessage id="expandmore" defaultMessage="expand_more" /> </Icon>}>
                                     <div className="flex items-center">
-                                        <Icon className="mr-8" color="action">help_outline</Icon>
+                                        <Icon className="mr-8" color="action">
+                                        <FormattedMessage id="helpoutline" defaultMessage="help_outline" /></Icon>
                                         <Typography className="">{faq.question}</Typography>
                                     </div>
                                 </ExpansionPanelSummary>

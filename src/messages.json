@@ -122,5 +122,81 @@
 {
   "id": "reportproblem",
   "defaultMessage": "Report this problem"
+},
+{
+  "id": "heretohelp",
+   "defaultMessage": "We're here to help"
+},
+{
+  "id": "feqsquestions",
+  "defaultMessage": "Frequently asked questions"
+},
+{
+  "id": "search",
+  "defaultMessage": "search"
+},
+{
+  "id": "expandmore",
+  "defaultMessage": "expand_more"
+},
+{
+  "id": "helpoutline",
+  "defaultMessage": "help_outline"
+},
+{
+  "id": "invoice",
+  "defaultMessage": "INVOICE"
+},
+{
+  "id": "invoicedate",
+  "defaultMessage": "INVOICE DATE"
+},
+{
+  "id": "duedate",
+   "defaultMessage": "DUE DATE"
+}, 
+{
+  "id": "service",
+  "defaultMessage": "SERVICE"
+},
+{
+  "id": "unit",
+  "defaultMessage": "UNIT"
+},
+{
+  "id": "unitprice", 
+  "defaultMessage": "UNIT PRICE"
+},
+{
+  "id": "quantity",
+  "defaultMessage": "QUANTITY"
+},
+{
+  "id": "total",
+  "defaultMessage": "TOTAL"
+},
+{
+  "id": "subtotal",
+  "defaultMessage": "SUBTOTAL"
+},
+{
+  "id": "tax",
+  "defaultMessage": "TAX"
+},
+{
+  "id": "discount",
+  "defaultMessage": "DISCOUNT"
+},
+{
+  "id": "total",
+  "defaultMessage": "TOTAL"
+},
+{
+  "id": "paybusiness",
+  "defaultMessage": "Please pay within 15 days. Thank you for your business." 
+},
+{
+  "id": "french",
+  "defaultMessage": "In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia. Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero tincidunt lacinia et eget eros"
 }
 ]
