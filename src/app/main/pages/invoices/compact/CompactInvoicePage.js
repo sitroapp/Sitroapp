@@ -4,6 +4,7 @@ import {darken} from '@material-ui/core/styles/colorManipulator';
 import {FuseAnimate} from '@fuse';
 import classNames from 'classnames';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
 
 const styles = theme => ({
     root   : {
@@ -70,7 +71,7 @@ class CompactInvoicePage extends Component {
                                                 <tr>
                                                     <td className="pr-16 pb-4">
                                                         <Typography className="font-light" variant="h6" color="textSecondary">
-                                                            INVOICE
+                                                         <FormattedMessage id="invoice" defaultMessage="INVOICE" />   
                                                         </Typography>
                                                     </td>
                                                     <td className="pb-4">
@@ -83,7 +84,7 @@ class CompactInvoicePage extends Component {
                                                 <tr>
                                                     <td className="pr-16">
                                                         <Typography color="textSecondary">
-                                                            INVOICE DATE
+                                                          <FormattedMessage id="invoicedate" defaultMessage="INVOICE DATE" />  
                                                         </Typography>
                                                     </td>
                                                     <td>
@@ -96,7 +97,7 @@ class CompactInvoicePage extends Component {
                                                 <tr>
                                                     <td className="pr-16">
                                                         <Typography color="textSecondary">
-                                                            DUE DATE
+                                                          <FormattedMessage id="duedate" defaultMessage="DUE DATE" /> 
                                                         </Typography>
                                                     </td>
                                                     <td>
@@ -171,19 +172,19 @@ class CompactInvoicePage extends Component {
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    SERVICE
+                                                 <FormattedMessage id="service" defaultMessage="SERVICE" />   
                                                 </th>
                                                 <th>
-                                                    UNIT
+                                                   <FormattedMessage id="unit" defaultMessage="UNIT" />
                                                 </th>
                                                 <th className="text-right">
-                                                    UNIT PRICE
+                                                  <FormattedMessage id="unitprice" defaultMessage="UNIT PRICE" />  
                                                 </th>
                                                 <th className="text-right">
-                                                    QUANTITY
+                                                   <FormattedMessage id="quantity" defaultMessage="QUANTITY" /> 
                                                 </th>
                                                 <th className="text-right">
-                                                    TOTAL
+                                                   <FormattedMessage id="total" defaultMessage="TOTAL" /> 
                                                 </th>
                                             </tr>
                                         </thead>
@@ -214,7 +215,8 @@ class CompactInvoicePage extends Component {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">SUBTOTAL</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="subtotal" defaultMessage="SUBTOTAL" /> </Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -224,7 +226,8 @@ class CompactInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">TAX</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="tax" defaultMessage="TAX"/></Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -234,7 +237,8 @@ class CompactInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">DISCOUNT</Typography>
+                                                    <Typography className="font-medium" variant="subtitle1" color="textSecondary">
+                                                    <FormattedMessage id="discount" defaultMessage="DISCOUNT" /> </Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-medium" variant="subtitle1" color="textSecondary">
@@ -244,7 +248,8 @@ class CompactInvoicePage extends Component {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Typography className="font-light" variant="h4" color="textSecondary">TOTAL</Typography>
+                                                    <Typography className="font-light" variant="h4" color="textSecondary">
+                                                    <FormattedMessage id="total" defaultMessage="TOTAL"/></Typography>
                                                 </td>
                                                 <td className="text-right">
                                                     <Typography className="font-light" variant="h4" color="textSecondary">
@@ -259,7 +264,8 @@ class CompactInvoicePage extends Component {
 
                                 <div className="mt-96">
 
-                                    <Typography className="mb-24 print:mb-12" variant="body1">Please pay within 15 days. Thank you for your business.</Typography>
+                                    <Typography className="mb-24 print:mb-12" variant="body1">
+                                    <FormattedMessage id="paybusiness" defaultMessage="Please pay within 15 days. Thank you for your business." /> </Typography>
 
                                     <div className="flex">
 
@@ -268,11 +274,11 @@ class CompactInvoicePage extends Component {
                                         </div>
 
                                         <Typography className="font-medium mb-64" variant="caption" color="textSecondary">
-                                            In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque
+                                            <FormattedMessage id="french" defdefaultMessage="In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque
                                             scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit
                                             quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia.
                                             Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero
-                                            tincidunt lacinia et eget eros.
+                                            tincidunt lacinia et eget eros." />
                                         </Typography>
                                     </div>
                                 </div>
