@@ -17,5 +17,12 @@ var mes_fi = {
     "id": "AVATA",
     "id": "areyounot",
     "reset.pws": "Nollaa SALASANA",
-    "resetyour.pws": "NOLLAA SALASANA"
+    "resetyour.pws": "NOLLAA SALASANA",
+    "thank.you": "Hey! Thank you for checking out our app.",
+    "ready.yet": "It’s not quite ready yet, but we are working hard and it will be ready in approximately:",
+    "subscrib_to_email": "If you would like to be notified when the app is ready, you can subscribe to our e-mail list.",
+    "subscribe": "SUBSCRIBE",
+    "search": "Hae",
+    "error": "Valitettavasti etsinyt sivua ei löytynyt",
+    "gotodashboard": "Palaa kojelautaan",
     };

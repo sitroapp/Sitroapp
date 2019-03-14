@@ -82,5 +82,33 @@
 {
   "id": "resetyour.pws",
   "defaultMessage": "RESET YOUR PASSWORD"
+},
+{
+  "id": "thank.you",
+  "defaultMessage": "Hey! Thank you for checking out our app."
+},
+{
+  "id": "ready.yet",
+  "defaultMessage": "It’s not quite ready yet, but we are working hard and it will be ready in approximately:"
+},
+{
+  "id": "subscrib_to_email",
+  "defaultMessage": "If you would like to be notified when the app is ready, you can subscribe to our e-mail list."
+},
+{
+  "id": "subscribe",
+  "defaultMessage": "SUBSCRIBE"
+},
+{
+  "id": "search",
+  "defaultMessage": "search" 
+},
+{
+  "id": "gotodashboard",
+  "defaultMessage": "Go back to dashboard"
+},
+{
+  "id": "error",
+  "defaultMessage": "Sorry but we could not find the page you are looking for"
 }
 ]
