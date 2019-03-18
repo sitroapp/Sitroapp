@@ -130,7 +130,7 @@ class ModernInvoicePage extends Component {
                                                 {invoice.client.website && (
                                                     <Typography color="textSecondary">
                                                         <span>
-                                                           <FormattedMessage id="web" defaultMessage="" /></span>
+                                                           <FormattedMessage id="web" defaultMessage="web" /></span>
                                                         {invoice.client.website}
                                                     </Typography>
                                                 )}
@@ -143,7 +143,7 @@ class ModernInvoicePage extends Component {
                                             <tr>
                                                 <td className="pr-16 pb-32">
                                                     <Typography className="font-light" variant="h4" color="textSecondary">
-                                                      <FormattedMessage id="invoice" defaultMessage="INVOICE"/>  
+                                                   
                                                     </Typography>
                                                 </td>
                                                 <td className="pb-32">
