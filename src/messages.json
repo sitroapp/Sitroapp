@@ -198,5 +198,24 @@
 {
   "id": "french",
   "defaultMessage": "In condimentum malesuada efficitur. Mauris volutpat placerat auctor. Ut ac congue dolor. Quisque scelerisque lacus sed feugiat fermentum. Cras aliquet facilisis pellentesque. Nunc hendrerit quam at leo commodo, a suscipit tellus dapibus. Etiam at felis volutpat est mollis lacinia. Mauris placerat sem sit amet velit mollis, in porttitor ex finibus. Proin eu nibh id libero tincidunt lacinia et eget eros"
+},
+{
+ "id": "phone",
+ "defaultMessage": "puhelin: "
+    
+},
+{
+  "id":"email",
+  "defaultMessage": "Sähköposti: "
+    
+},
+{
+  "id": "web",
+  "defaultMessage": "Web: "
+	
+},
+{
+  "id": "client",
+  "defaultMessage": "ASIAKAS"
 }
 ]
