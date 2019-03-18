@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Avatar, AppBar, Button, Card, CardContent, Icon, IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, Toolbar, Typography} from '@material-ui/core';
 import {FuseAnimateGroup} from '@fuse';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
+
 
 class AboutTab extends Component {
 
@@ -38,35 +40,40 @@ class AboutTab extends Component {
                                 <AppBar position="static" elevation={0}>
                                     <Toolbar className="pl-16 pr-8">
                                         <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                            General Information
+                                        <FormattedMessage id="" defaultMessage="General Information" />    
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>
 
                                 <CardContent>
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Gender</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="Gender"/> </Typography>
                                         <Typography>{general.gender}</Typography>
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Birthday</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                           <FormattedMessage id="" defaultMessage="Birthday"/> </Typography>
                                         <Typography>{general.birthday}</Typography>
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Locations</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        < FormattedMessage id="" defaultMessage="Locations"/> </Typography>
 
                                         {general.locations.map((location) => (
                                             <div className="flex items-center" key={location}>
                                                 <Typography>{location}</Typography>
-                                                <Icon className="text-16 ml-4" color="action">location_on</Icon>
+                                                <Icon className="text-16 ml-4" color="action">
+                                               <FormattedMessage id="" defaultMessage="location_on" /> </Icon>
                                             </div>
                                         ))}
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">About Me</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="About Me" /> </Typography>
                                         <Typography>{general.about}</Typography>
                                     </div>
 
@@ -79,24 +86,27 @@ class AboutTab extends Component {
                                 <AppBar position="static" elevation={0}>
                                     <Toolbar className="pl-16 pr-8">
                                         <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                            Work
+                                         <FormattedMessage id="" defaultMessag="Work" />   
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>
 
                                 <CardContent>
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Occupation</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="ccupation"/> </Typography>
                                         <Typography>{work.occupation}</Typography>
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Skills</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        < FormattedMessage id="" defaultMessage="Skills"/></Typography>
                                         <Typography>{work.skills}</Typography>
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Jobs</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="Jobs"/></Typography>
                                         <table className="">
                                             <tbody>
                                                 {work.jobs.map((job) => (
@@ -121,19 +131,21 @@ class AboutTab extends Component {
                                 <AppBar position="static" elevation={0}>
                                     <Toolbar className="pl-16 pr-8">
                                         <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                            Contact
+                                          <FormattedMessage id="" defaultMessage="Contact"/>  
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>
 
                                 <CardContent>
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Address</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="Address"/></Typography>
                                         <Typography>{contact.address}</Typography>
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Tel.</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        < FormattedMessage id="" defaultMessage="Tel." /></Typography>
 
                                         {contact.tel.map((tel) => (
                                             <div className="flex items-center" key={tel}>
@@ -143,7 +155,8 @@ class AboutTab extends Component {
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Website</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="Webiste"/></Typography>
 
                                         {contact.websites.map((website) => (
                                             <div className="flex items-center" key={website}>
@@ -153,7 +166,8 @@ class AboutTab extends Component {
                                     </div>
 
                                     <div className="mb-24">
-                                        <Typography className="font-bold mb-4 text-15">Emails</Typography>
+                                        <Typography className="font-bold mb-4 text-15">
+                                        <FormattedMessage id="" defaultMessage="Emails"/></Typography>
 
                                         {contact.emails.map((email) => (
                                             <div className="flex items-center" key={email}>
@@ -178,9 +192,10 @@ class AboutTab extends Component {
                             <AppBar position="static" elevation={0}>
                                 <Toolbar className="pl-16 pr-8">
                                     <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                        Friends
+                                    <FormattedMessage id="" defaultMessage="Friends"/>  
                                     </Typography>
-                                    <Button className="normal-case" color="inherit" size="small">See 454 more</Button>
+                                    <Button className="normal-case" color="inherit" size="small">
+                                    <FormattedMessage id="" defaultMessage="See 454 more"/> </Button>
                                 </Toolbar>
                             </AppBar>
                             <CardContent className="p-0">
@@ -196,9 +211,10 @@ class AboutTab extends Component {
                             <AppBar position="static" elevation={0}>
                                 <Toolbar className="pl-16 pr-8">
                                     <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                        Joined Groups
+                                    <FormattedMessage id="" defaultMessage="Joined Groups"/>  
                                     </Typography>
-                                    <Button className="normal-case" color="inherit" size="small">See 6 more</Button>
+                                    <Button className="normal-case" color="inherit" size="small">
+                                    <FormattedMessage id="" defaultMessage="See 6 more"/></Button>
                                 </Toolbar>
                             </AppBar>
                             <CardContent className="p-0">

@@ -52,7 +52,13 @@ const mes_en = () => {
     "phone": "Phone: ",
     "email": "Email: ",
     "web": "Web: ",
-    "client": "CLIENT"
+    "client": "CLIENT",
+
+    "follow": "Follow",
+    "sendmessage": "Send Message",
+    "info": "Info",
+    "post": "POST",
+    "postcomment": "Post Comment"
 
 }
 );
