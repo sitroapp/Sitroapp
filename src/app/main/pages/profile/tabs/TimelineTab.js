@@ -21,6 +21,7 @@ import {
 import {FuseAnimateGroup} from '@fuse';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 class TimelineTab extends Component {
 
@@ -48,8 +49,7 @@ class TimelineTab extends Component {
                     <FuseAnimateGroup
                         enter={{
                             animation: "transition.slideUpBigIn"
-                        }}
-                    >
+                        }}>
                         <div>
                             <Card className="w-full overflow-hidden">
                                 <Input
@@ -76,7 +76,7 @@ class TimelineTab extends Component {
 
                                     <div className="p-8">
                                         <Button variant="contained" color="primary" size="small" aria-label="post">
-                                            POST
+                                       <FormattedMessage id="post" defaultMessage="POST" />     
                                         </Button>
                                     </div>
 
@@ -204,7 +204,9 @@ class TimelineTab extends Component {
                                                         disableUnderline
                                                     />
                                                 </Paper>
-                                                <Button className="normal-case" variant="contained" color="primary" size="small">Post Comment</Button>
+                                                <Button className="normal-case" variant="contained" color="primary" size="small">
+                                                < FormattedMessage id="postcomment" defaultMessage="Post Comment" />
+                                                </Button>
                                             </div>
                                         </div>
                                     </AppBar>
@@ -226,9 +228,10 @@ class TimelineTab extends Component {
                             <AppBar position="static" elevation={0}>
                                 <Toolbar className="pl-16 pr-8">
                                     <Typography variant="subtitle1" color="inherit" className="flex-1">
-                                        Latest Activity
+                                    <FormattedMessage id="latestactivity" defaultMessage="Latest Activity" />    
                                     </Typography>
-                                    <Button color="inherit" size="small">See All</Button>
+                                    <Button color="inherit" size="small">
+                                    <FormattedMessage id="seeall" defaultMessage="See All" /> </Button>
                                 </Toolbar>
                             </AppBar>
                             <CardContent className="p-0">

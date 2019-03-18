@@ -217,5 +217,22 @@
 {
   "id": "client",
   "defaultMessage": "ASIAKAS"
+},
+{
+  
+ "id": "sendmessage",
+ "defaultMessage": "Lähetä viesti"
+},
+{
+  "id": "follow",
+  "defaultMessage": "Seurata"
+},
+{
+  "id": "info",
+  "defaultMessage": "info"
+},
+{
+   "id": "post", 
+   "defaultMessage": "postcomment"
 }
 ]

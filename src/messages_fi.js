@@ -50,6 +50,12 @@ var mes_fi = {
     "phone": "puhelin: ",
     "email": "Sähköposti: ",
     "web": "Web: ",
-    "client": "ASIAKAS"
+    "client": "ASIAKAS",
+    "info": "Info",
+    "post": "LÄHETTÄ",
+    "postcomment": "Lähetä Kommentti",
+
+    "follow": "Seurata",
+    "sendmessage": "Lähetä viesti"
 
     };

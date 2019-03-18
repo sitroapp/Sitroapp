@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {GridList, GridListTile, GridListTileBar, Icon, IconButton, Typography, ListSubheader} from '@material-ui/core';
 import {FuseAnimateGroup} from '@fuse';
 import axios from 'axios';
+import { FormattedMessage } from 'react-intl';
 
 class PhotosVideosTab extends Component {
 
@@ -50,7 +51,8 @@ class PhotosVideosTab extends Component {
                                                 title={media.title}
                                                 actionIcon={
                                                     <IconButton>
-                                                        <Icon className="text-white opacity-75">info</Icon>
+                                                        <Icon className="text-white opacity-75">
+                                                        <FormattedMessage id="info" defaultMessage="info"/> </Icon>
                                                     </IconButton>
                                                 }
                                             />

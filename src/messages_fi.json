@@ -66,6 +66,14 @@
     "web": "Web: ",
 	"client": "ASIAKAS",
 	
+	
+    "follow": "Seurata",
+	"sendmessage": "Lähetä viesti",
+	"info": "Info",
+	"post": "LÄHETTÄ",
+    "postcomment": "Lähetä Kommentti",
+
+	
     "welcome.back": "Tervetuloa takaisin",
     "task.add": "Lisää tehtävä",
     "all": "Kaikki",

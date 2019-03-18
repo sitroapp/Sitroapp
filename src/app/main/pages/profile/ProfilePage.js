@@ -4,6 +4,8 @@ import {FusePageSimple, FuseAnimate} from '@fuse';
 import TimelineTab from './tabs/TimelineTab';
 import PhotosVideosTab from './tabs/PhotosVideosTab';
 import AboutTab from './tabs/AboutTab';
+import { FormattedMessage } from 'react-intl';
+
 
 const styles = theme => ({
     layoutHeader : {
@@ -49,8 +51,12 @@ class ProfilePage extends Component {
                         </div>
 
                         <div className="flex items-center justify-end">
-                            <Button className="mr-8 normal-case" variant="contained" color="secondary" aria-label="Follow">Follow</Button>
-                            <Button className="normal-case" variant="contained" color="primary" aria-label="Send Message">Send Message</Button>
+                            <Button className="mr-8 normal-case" variant="contained" color="secondary" aria-label="Follow">
+                          <FormattedMessage id="follow" defaultMessage="Follow" />
+                            </Button>
+                            <Button className="normal-case" variant="contained" color="primary" aria-label="Send Message">
+                          <FormattedMessage id="sendmessage" defaultMessage="Send Message" />
+                            </Button>
                         </div>
                     </div>
                 }
